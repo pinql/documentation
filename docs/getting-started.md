@@ -5,6 +5,6 @@ slug: /
 
 :::info
 
-This guide is still a work in progress. Please refer to the routes [documentation](../docs/rest/company.md).
+This guide is still a work in progress. Please refer to the routes [documentation](../docs/rest/property.md).
 
 :::

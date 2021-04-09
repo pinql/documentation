@@ -9,8 +9,8 @@ module.exports = {
       label: "RESTful API",
       items: [
         "rest/introduction",
-        "rest/company",
         "rest/property",
+        "rest/company",
         "rest/user",
       ],
       collapsed: false,
