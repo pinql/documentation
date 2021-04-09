@@ -11,10 +11,10 @@ module.exports = {
   projectName: "", // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: "Pinql",
+      title: "",
       logo: {
         alt: "Pinql Logo",
-        src: "img/logo.svg",
+        src: "img/full-logo.svg",
       },
       items: [
         {
