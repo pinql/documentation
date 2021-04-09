@@ -2,7 +2,7 @@
 module.exports = {
   title: "Pinql Documentation",
   tagline: "Connect with Pinql APIs",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://doc-pinql.netlify.app/docs/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
