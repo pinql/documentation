@@ -1,6 +1,6 @@
 ---
 title: Property
-description: Proerty, Room and Item endpoints.
+description: Property, Room and Item endpoints.
 hide_table_of_contents: false
 ---
 
