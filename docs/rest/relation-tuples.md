@@ -4,48 +4,62 @@ description: Role-based access control (RBAC)
 hide_table_of_contents: false
 ---
 
-## **GET** /relation-tuples/user/:userId/access/properties
-
-Display all Objects a User has Access to
-
-```graphql
-{}
-```
-
-## **PUT** /relation-tuples/user/:userId/access/property/:propertyId
-
-Give a user access to a property
-
-```graphql
-{}
-```
-
-## **DELETE** /relation-tuples/user/:userId/access/property/:propertyId
-
-Remove a user access to a property
-
-```graphql
-{}
-```
-
 :::info
 
-The endpoints below are still in progress.
+The Role-based access control is still a work in progress.
 
 :::
 
-## **GET** /relation-tuples
+## Display all properties a user has access to
 
-Create a relation tuple
-
-```graphql
-{}
+```request
+GET /rest/relation-tuples/user/:userId/access/properties
+Content-Type: application/json
 ```
 
-## **GET** /health/alive
-
-Check alive status
+#### Response
 
 ```graphql
-{}
+[
+  { ...property }
+]
+```
+
+## Give a user access to a property
+
+```request
+PUT /rest/relation-tuples/user/:userId/access/property/:propertyId
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...property
+}
+```
+
+## Give a user access to a property
+
+```request
+DELETE /rest/relation-tuples/user/:userId/access/property/:propertyId
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...property
+}
+```
+
+## Create a relation tuple
+
+> **Not supported yet**
+
+```request
+GET /rest/relation-tuples
+Content-Type: application/json
 ```
