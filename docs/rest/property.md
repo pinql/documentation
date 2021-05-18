@@ -4,9 +4,14 @@ description: Property, Room and Item endpoints.
 hide_table_of_contents: false
 ---
 
-## **GET** /properties
+## List properties
 
-List all company property
+```request
+GET /rest/properties
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -16,9 +21,22 @@ List all company property
 }
 ```
 
-## **POST** /property
+#### Response
 
-Create a property
+```graphql
+[
+  { ...property }
+]
+```
+
+## Create a property
+
+```request
+POST /rest/property
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -59,42 +77,90 @@ Create a property
 }
 ```
 
-## **PUT** /property/:propertyId
-
-Update property by id
+#### Response
 
 ```graphql
-// idem POST /property
-// cannot update rooms throw this route
+{
+  ...property
+}
 ```
 
-## **GET** /property/:propertyId
+## Update property by id
 
-Get property by id
+```request
+PUT /rest/property/:propertyId
+Content-Type: application/json
+```
+
+#### Request body
+
+> Same as [create a property](#create-a-property)
+>
+> **Caution:** Cannot update rooms and items throught this endpoint.
+
+<!-- Use [create a property room](#create-a-property-room) or [create an item in a property room](#create-an-item-in-a-property-room) insted. -->
+
+#### Response
 
 ```graphql
-{}
+{
+  ...property
+}
 ```
 
-## **PUT** /property/:propertyId/unpublish
+## Get property by id
 
-Publish property by id
+```request
+GET /rest/property/:propertyId
+Content-Type: application/json
+```
+
+#### Response
 
 ```graphql
-{}
+{
+  ...property
+}
 ```
 
-## **PUT** /property/:propertyId/publish
+## Publish property by id
 
-Unpublish property by id
+```request
+PUT /rest/property/:propertyId/publish
+Content-Type: application/json
+```
+
+#### Response
 
 ```graphql
-{}
+{
+  ...property
+}
 ```
 
-## **POST** /property/:propertyId/room
+## Unpublish property by id
 
-Create a property room
+```request
+PUT /rest/property/:propertyId/unpublish
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...property
+}
+```
+
+## Create a property room
+
+```request
+POST /rest/property/:propertyId/room
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -110,25 +176,52 @@ Create a property room
 }
 ```
 
-## **GET** /property/:propertyId/rooms
-
-List property rooms
+#### Response
 
 ```graphql
-{}
+{
+  ...room
+}
 ```
 
-## **DELETE** /property/:propertyId/room/:roomId
+## List property rooms
 
-Delete a property room
+```request
+GET /rest/property/:propertyId/rooms
+Content-Type: application/json
+```
+
+#### Response
 
 ```graphql
-{}
+[
+  { ...room }
+]
 ```
 
-## **POST** /property/:propertyId/room/:roomId/item
+## Delete a property room
 
-Create an item in a property room
+```request
+DELETE /rest/property/:propertyId/room/:roomId
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...room
+}
+```
+
+## Create an item in a property room
+
+```request
+POST /rest/property/:propertyId/room/:roomId/item
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -139,9 +232,22 @@ Create an item in a property room
 }
 ```
 
-## **GET** /property/:propertyId/room/:roomId/items
+#### Response
 
-Create an item in a property room
+```graphql
+{
+  ...item
+}
+```
+
+## Get property room items
+
+```request
+GET /rest/property/:propertyId/room/:roomId/items
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -151,10 +257,25 @@ Create an item in a property room
 }
 ```
 
-## **DELETE** /property/:propertyId/room/:roomId/item/:itemId
-
-Delete an item in a property room
+#### Response
 
 ```graphql
-{}
+[
+  { ...item }
+]
+```
+
+## Delete property room item by id
+
+```request
+DELETE /rest/property/:propertyId/room/:roomId/item/:itemId
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...item
+}
 ```
