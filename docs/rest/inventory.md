@@ -4,9 +4,14 @@ description: Inventory endpoints.
 hide_table_of_contents: false
 ---
 
-## **GET** /inventories
+## List inventories
 
-List all company inventories
+```request
+GET /rest/inventories
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -18,9 +23,26 @@ List all company inventories
 }
 ```
 
-## **GET** /end-inventories
+#### Response
 
-List all company end inventories
+```json
+{
+  "id": "string",
+  "foreignId": "string",
+  "pdf": "string",
+  "updatedAt": "string",
+  "createdAt": "string"
+}
+```
+
+## List end inventories
+
+```request
+GET /rest/end-inventories
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -29,5 +51,17 @@ List all company end inventories
   skip: Int
   fromDate: Date
   toDate: Date
+}
+```
+
+#### Response
+
+```json
+{
+  "id": "string",
+  "foreignId": "string",
+  "pdf": "string",
+  "updatedAt": "string",
+  "createdAt": "string"
 }
 ```
