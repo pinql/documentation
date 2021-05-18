@@ -11,6 +11,17 @@ GET /rest/company
 Content-Type: application/json
 ```
 
+#### Response
+
+```json
+{
+  "id": "string",
+  "name": "string",
+  "createdAt": "string",
+  "updatedAt": "string"
+}
+```
+
 ## Update company name
 
 ```request
@@ -30,10 +41,10 @@ Content-Type: application/json
 
 ```json
 {
-  "id": "id",
-  "name": "Pinql",
-  "createdAt": "2019-01-01T12:12:12.297Z",
-  "updatedAt": "2019-01-01T12:12:12.297Z"
+  "id": "string",
+  "name": "string",
+  "createdAt": "string",
+  "updatedAt": "string"
 }
 ```
 
@@ -57,9 +68,9 @@ Content-Type: multipart/form-data
 
 ```json
 {
-  "id": "id",
-  "name": "Pinql",
-  "createdAt": "2019-01-01T12:12:12.297Z",
-  "updatedAt": "2019-01-01T12:12:12.297Z"
+  "id": "string",
+  "name": "string",
+  "createdAt": "string",
+  "updatedAt": "string"
 }
 ```
