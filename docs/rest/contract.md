@@ -4,7 +4,7 @@ description: Contract endpoints.
 hide_table_of_contents: false
 ---
 
-## List all company contracts
+## List contracts
 
 ```request
 GET /rest/contracts
