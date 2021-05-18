@@ -4,9 +4,14 @@ description: Contract endpoints.
 hide_table_of_contents: false
 ---
 
-## **GET** /contracts
+## List all company contracts
 
-List all company contracts
+```request
+GET /rest/contracts
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
 {
@@ -15,5 +20,17 @@ List all company contracts
   skip: Int
   fromDate: Date
   toDate: Date
+}
+```
+
+#### Response
+
+```json
+{
+  "id": "string",
+  "foreignId": "string",
+  "pdf": "string",
+  "updatedAt": "string",
+  "createdAt": "string"
 }
 ```
