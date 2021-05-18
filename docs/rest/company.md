@@ -4,27 +4,62 @@ description: Company endpoints.
 hide_table_of_contents: false
 ---
 
-## **GET** /company
+## Read company infos
 
-Get company infos
-
-```graphql
-{}
+```request
+GET /rest/company
+Content-Type: application/json
 ```
 
-## **PUT** /company
+## Update company name
 
-Update company
+```request
+PUT /rest/company
+Content-Type: application/json
+```
+
+#### Request body
 
 ```graphql
-# content-type: multipart/form-data
+{
+  name: String
+}
+```
+
+#### Response
+
+```json
+{
+  "id": "id",
+  "name": "Pinql",
+  "createdAt": "2019-01-01T12:12:12.297Z",
+  "updatedAt": "2019-01-01T12:12:12.297Z"
+}
+```
+
+## Update company images
+
+```request
+PUT /rest/company
+Content-Type: multipart/form-data
+```
+
+#### Request body
+
+```graphql
 {
   logo: File
   defaultPropertyImage: File
 }
+```
 
-# content-type: application/json
+#### Response
+
+```json
 {
-  name: String
+  "id": "id",
+  "name": "Pinql",
+  "createdAt": "2019-01-01T12:12:12.297Z",
+  "updatedAt": "2019-01-01T12:12:12.297Z"
 }
 ```
