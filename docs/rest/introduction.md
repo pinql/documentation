@@ -32,7 +32,3 @@ https://www.api.pinql.com
   "Authorization": "not_valid.for_exemple_purpose_ZWNyZXQikjsdklsjflksdlqfj1dzF3RWVxNm1KLkVGV0h1cnlIclpLc3huVjQwdHFiSndUdGVjSWNVemEiLCJpYXQiOjE2MjE1MjExMzJ9.QI-yOiXwQ3fA3Gkqsjdflmkdjscrm_DW6swpY3rR0UXWBQD8"
 }
 ```
-
-## Contribution
-
-Do not hesitate to contribute to this documentation by making a pull request on our [documentation repository](https://github.com/pinql/documentation).
