@@ -24,11 +24,11 @@ module.exports = {
           position: "left",
         },
         // { to: "blog", label: "Blog", position: "left" },
-        // {
-        //   href: "https://github.com/facebook/docusaurus",
-        //   label: "GitHub",
-        //   position: "right",
-        // },
+        {
+          href: "https://github.com/pinql/documentation",
+          label: "GitHub",
+          position: "right",
+        },
       ],
     },
     footer: {
@@ -64,19 +64,19 @@ module.exports = {
         //     },
         //   ],
         // },
-        // {
-        //   title: "More",
-        //   items: [
-        //     {
-        //       label: "Blog",
-        //       to: "blog",
-        //     },
-        //     {
-        //       label: "GitHub",
-        //       href: "https://github.com/facebook/docusaurus",
-        //     },
-        //   ],
-        // },
+        {
+          title: "More",
+          items: [
+            // {
+            //   label: "Blog",
+            //   to: "blog",
+            // },
+            {
+              label: "GitHub",
+              href: "https://github.com/pinql/documentation",
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Pinql`,
     },
