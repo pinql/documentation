@@ -72,7 +72,7 @@ export default function Home() {
                 "button button--outline button--secondary button--lg",
                 styles.getStarted
               )}
-              to={useBaseUrl("docs/rest/property")}
+              to={useBaseUrl("docs/rest/introduction")}
             >
               Get Started
             </Link>
