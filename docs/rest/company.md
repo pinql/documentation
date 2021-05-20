@@ -74,3 +74,63 @@ Content-Type: multipart/form-data
   "updatedAt": "string"
 }
 ```
+
+## List company tokens
+
+```request
+GET /company/tokens
+Content-Type: application/json
+```
+
+#### Response
+
+```json
+[
+  {
+    "id": "string",
+    "description": "string"
+  }
+]
+```
+
+## Create new token
+
+```request
+POST /company/token
+Content-Type: application/json
+```
+
+#### Request body
+
+```graphql
+{
+  description: String
+}
+```
+
+#### Response
+
+```json
+{
+  "id": "string",
+  "description": "string"
+}
+```
+
+## Delete company token by id
+
+```request
+DELETE /company/token/:tokenId
+Content-Type: application/json
+```
+
+#### Response
+
+```json
+{
+  "deletedToken": {
+    "id": "string",
+    "description": "string"
+  }
+}
+```
