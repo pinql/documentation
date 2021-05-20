@@ -23,7 +23,7 @@ module.exports = {
           label: "Docs",
           position: "left",
         },
-        // { to: "blog", label: "Blog", position: "left" },
+        { to: "https://www.pinql.com/", label: "Website", position: "right" },
         {
           href: "https://github.com/pinql/documentation",
           label: "GitHub",
@@ -67,10 +67,10 @@ module.exports = {
         {
           title: "More",
           items: [
-            // {
-            //   label: "Blog",
-            //   to: "blog",
-            // },
+            {
+              label: "Website",
+              to: "https://www.pinql.com/",
+            },
             {
               label: "GitHub",
               href: "https://github.com/pinql/documentation",
@@ -88,15 +88,13 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          // editUrl:
-          //   "https://github.com/facebook/docusaurus/edit/master/website/",
+          editUrl: "https://github.com/pinql/documentation/edit/master/",
         },
-        // blog: {
-        //   showReadingTime: true,
-        //   // Please change this to your repo.
-        //   editUrl:
-        //     "https://github.com/facebook/docusaurus/edit/master/website/blog/",
-        // },
+        blog: {
+          showReadingTime: true,
+          // Please change this to your repo.
+          editUrl: "https://github.com/pinql/documentation/edit/master/",
+        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
