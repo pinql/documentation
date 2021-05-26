@@ -10,6 +10,9 @@ module.exports = {
   organizationName: "pinql", // Usually your GitHub org/user name.
   projectName: "", // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: "dark",
+    },
     navbar: {
       title: "",
       logo: {
