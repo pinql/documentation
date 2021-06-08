@@ -29,8 +29,19 @@ Content-Type: application/json
 {
   "id": "string",
   "foreignId": "string",
+  "stringifiedData": "string",
   "pdf": "string",
   "updatedAt": "string",
-  "createdAt": "string"
+  "createdAt": "string",
+  "property": {
+    "id": "string",
+    "foreignId": "string"
+  },
+  "tenants": {
+    "id": "string",
+    "firstName": "string",
+    "lastName": "string",
+    "email": "string"
+  }
 }
 ```
