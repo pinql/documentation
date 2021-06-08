@@ -99,6 +99,33 @@ Content-Type: application/json
   "foreignId": "string",
   "pdf": "string",
   "updatedAt": "string",
-  "createdAt": "string"
-}
+  "createdAt": "string",
+  "meters": {
+    "id": "string",
+    "type": "string",
+    "ref": "string",
+    "value1": "string",
+    "value2": "string"
+  },
+  "property": {
+    "id": "string",
+    "foreignId": "string"
+  },
+  "contract": {
+    "id": "string",
+    "foreignId": "string"
+  },
+  "tenants": {
+    "id": "string",
+    "foreignId": "string"
+  },
+  "rooms": {
+    "id": "string",
+    "title": "string",
+    "newGlogbalCondition": "string",
+    "newFloorCondition": "string",
+    "newWallslCondition": "string",
+    "newRoofsCondition": "string",
+    "comments": "string"
+  }
 ```
