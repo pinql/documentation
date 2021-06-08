@@ -40,18 +40,6 @@ Content-Type: application/json
   "badge": "boolean",
   "badgeNumber": "int",
   "parking": "boolean",
-  "parkings": {
-    "id": "string",
-    "number": "string",
-    "direction": "string"
-  },
-  "meters": {
-    "id": "string",
-    "type": "string",
-    "ref": "string",
-    "value1": "string",
-    "value2": "string"
-  },
   "property": {
     "id": "string",
     "foreignId": "string"
@@ -60,15 +48,33 @@ Content-Type: application/json
     "id": "string",
     "foreignId": "string"
   },
-  "rooms": {
-    "id": "string",
-    "title": "string",
-    "glogbalCondition": "string",
-    "floorCondition": "string",
-    "wallslCondition": "string",
-    "roofsCondition": "string",
-    "comments": "string"
-  }
+  "parkings": [
+    {
+      "id": "string",
+      "number": "string",
+      "direction": "string"
+    }
+  ],
+  "meters": [
+    {
+      "id": "string",
+      "type": "string",
+      "ref": "string",
+      "value1": "string",
+      "value2": "string"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "string",
+      "title": "string",
+      "glogbalCondition": "string",
+      "floorCondition": "string",
+      "wallslCondition": "string",
+      "roofsCondition": "string",
+      "comments": "string"
+    }
+  ]
 }
 ```
 
@@ -100,13 +106,6 @@ Content-Type: application/json
   "pdf": "string",
   "updatedAt": "string",
   "createdAt": "string",
-  "meters": {
-    "id": "string",
-    "type": "string",
-    "ref": "string",
-    "value1": "string",
-    "value2": "string"
-  },
   "property": {
     "id": "string",
     "foreignId": "string"
@@ -115,17 +114,31 @@ Content-Type: application/json
     "id": "string",
     "foreignId": "string"
   },
-  "tenants": {
-    "id": "string",
-    "foreignId": "string"
-  },
-  "rooms": {
-    "id": "string",
-    "title": "string",
-    "newGlogbalCondition": "string",
-    "newFloorCondition": "string",
-    "newWallslCondition": "string",
-    "newRoofsCondition": "string",
-    "comments": "string"
-  }
+  "meters": [
+    {
+      "id": "string",
+      "type": "string",
+      "ref": "string",
+      "value1": "string",
+      "value2": "string"
+    }
+  ],
+  "tenants": [
+    {
+      "id": "string",
+      "foreignId": "string"
+    }
+  ],
+  "rooms": [
+    {
+      "id": "string",
+      "title": "string",
+      "newGlogbalCondition": "string",
+      "newFloorCondition": "string",
+      "newWallslCondition": "string",
+      "newRoofsCondition": "string",
+      "comments": "string"
+    }
+  ]
+}
 ```

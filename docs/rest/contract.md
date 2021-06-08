@@ -37,11 +37,13 @@ Content-Type: application/json
     "id": "string",
     "foreignId": "string"
   },
-  "tenants": {
-    "id": "string",
-    "firstName": "string",
-    "lastName": "string",
-    "email": "string"
-  }
+  "tenants": [
+    {
+      "id": "string",
+      "firstName": "string",
+      "lastName": "string",
+      "email": "string"
+    }
+  ]
 }
 ```
