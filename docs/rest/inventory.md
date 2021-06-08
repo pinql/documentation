@@ -31,7 +31,44 @@ Content-Type: application/json
   "foreignId": "string",
   "pdf": "string",
   "updatedAt": "string",
-  "createdAt": "string"
+  "createdAt": "string",
+  "formerOccupantName": "string",
+  "mailbox": "boolean",
+  "mailboxCondition": "string",
+  "key": "boolean",
+  "keyNumber": "int",
+  "badge": "boolean",
+  "badgeNumber": "int",
+  "parking": "boolean",
+  "parkings": {
+    "id": "string",
+    "number": "string",
+    "direction": "string"
+  },
+  "meters": {
+    "id": "string",
+    "type": "string",
+    "ref": "string",
+    "value1": "string",
+    "value2": "string"
+  },
+  "property": {
+    "id": "string",
+    "foreignId": "string"
+  },
+  "contract": {
+    "id": "string",
+    "foreignId": "string"
+  },
+  "rooms": {
+    "id": "string",
+    "title": "string",
+    "glogbalCondition": "string",
+    "floorCondition": "string",
+    "wallslCondition": "string",
+    "roofsCondition": "string",
+    "comments": "string"
+  }
 }
 ```
 
