@@ -40,7 +40,7 @@ Content-Type: application/json
 }
 ```
 
-## Give a user access to a property
+## Remove a user access to a property
 
 ```request
 DELETE /rest/relation-tuples/user/:userId/access/property/:propertyId
