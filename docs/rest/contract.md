@@ -42,7 +42,10 @@ Content-Type: application/json
       "id": "string",
       "firstName": "string",
       "lastName": "string",
-      "email": "string"
+      "email": "string",
+      "address": "string",
+      "birthDate": "string",
+      "birthPlace": "string"
     }
   ]
 }
