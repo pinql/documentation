@@ -11,7 +11,7 @@ GET /rest/inventories
 Content-Type: application/json
 ```
 
-#### Request body
+#### Request params
 
 ```graphql
 {
@@ -85,7 +85,7 @@ GET /rest/end-inventories
 Content-Type: application/json
 ```
 
-#### Request body
+#### Request params
 
 ```graphql
 {
