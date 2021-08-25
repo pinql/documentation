@@ -191,6 +191,15 @@ GET /rest/property/:propertyId/rooms
 Content-Type: application/json
 ```
 
+#### Request params
+
+```graphql
+{
+  first: Int
+  skip: Int
+}
+```
+
 #### Response
 
 ```graphql
