@@ -13,12 +13,10 @@ Content-Type: application/json
 
 #### Request params
 
-```graphql
-{
-  foreignId: String
-  first: Int
-  skip: Int
-}
+```params
+foreignId: String
+first: Int
+skip: Int
 ```
 
 #### Response
@@ -193,11 +191,9 @@ Content-Type: application/json
 
 #### Request params
 
-```graphql
-{
-  first: Int
-  skip: Int
-}
+```params
+first: Int
+skip: Int
 ```
 
 #### Response
@@ -258,12 +254,10 @@ Content-Type: application/json
 
 #### Request params
 
-```graphql
-{
-  foreignId: String
-  first: Int
-  skip: Int
-}
+```params
+foreignId: String
+first: Int
+skip: Int
 ```
 
 #### Response

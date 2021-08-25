@@ -13,14 +13,12 @@ Content-Type: application/json
 
 #### Request params
 
-```graphql
-{
-  foreignId: String
-  first: Int
-  skip: Int
-  fromDate: Date
-  toDate: Date
-}
+```params
+foreignId: String
+first: Int
+skip: Int
+fromDate: Date
+toDate: Date
 ```
 
 #### Response
