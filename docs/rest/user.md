@@ -11,7 +11,7 @@ GET /rest/users
 Content-Type: application/json
 ```
 
-#### Request body
+#### Request params
 
 ```graphql
 {
