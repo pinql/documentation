@@ -256,7 +256,7 @@ GET /rest/property/:propertyId/room/:roomId/items
 Content-Type: application/json
 ```
 
-#### Request body
+#### Request params
 
 ```graphql
 {
