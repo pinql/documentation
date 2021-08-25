@@ -13,13 +13,13 @@ This guide is still a work in progress. Please refer to the routes [documentatio
 #### Development
 
 ```url
-https://www.api.dev.pinql.com
+https://api.dev.pinql.com
 ```
 
 #### Production
 
 ```url
-https://www.api.pinql.com
+https://api.pinql.com
 ```
 
 ## Connect with Pinql
