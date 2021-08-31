@@ -106,6 +106,31 @@ Content-Type: application/json
 }
 ```
 
+## Update property images by property id
+
+```request
+PUT /rest/property-images/:propertyId
+Content-Type: multipart/form-data
+```
+
+#### Request body
+
+```sh
+curl localhost:8000/rest/property-images/PROPERTY_ID \
+    -i -X PUT -H "Content-Type: multipart/form-data" \
+    -F "file=@/YOUR/PATH/IMAGE_0.jpg" \
+    -F "file=@/YOUR/PATH/IMAGE_1.jpg" \
+    -H "Authorization: token"
+```
+
+#### Response
+
+```graphql
+{
+  ...property
+}
+```
+
 ## Get property by id
 
 ```request
