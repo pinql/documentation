@@ -83,6 +83,36 @@ Content-Type: application/json
 }
 ```
 
+## Get property by id
+
+```request
+GET /rest/property/:propertyId
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...property
+}
+```
+
+## Publish property by id
+
+```request
+PUT /rest/property/:propertyId/publish
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+{
+  ...property
+}
+```
+
 ## Update property by id
 
 ```request
@@ -116,41 +146,11 @@ Content-Type: multipart/form-data
 #### Request body
 
 ```sh
-curl localhost:8000/rest/property-images/PROPERTY_ID \
+curl ENV_URL/rest/property-images/PROPERTY_ID \
     -i -X PUT -H "Content-Type: multipart/form-data" \
     -F "file=@/YOUR/PATH/IMAGE_0.jpg" \
     -F "file=@/YOUR/PATH/IMAGE_1.jpg" \
     -H "Authorization: token"
-```
-
-#### Response
-
-```graphql
-{
-  ...property
-}
-```
-
-## Get property by id
-
-```request
-GET /rest/property/:propertyId
-Content-Type: application/json
-```
-
-#### Response
-
-```graphql
-{
-  ...property
-}
-```
-
-## Publish property by id
-
-```request
-PUT /rest/property/:propertyId/publish
-Content-Type: application/json
 ```
 
 #### Response
