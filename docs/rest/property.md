@@ -123,8 +123,9 @@ Content-Type: application/json
 #### Request body
 
 > Same as [create a property](#create-a-property)
->
-> **Caution:** Cannot update rooms and items throught this endpoint.
+
+<!-- >
+> **Caution:** Cannot update rooms and items throught this endpoint. -->
 
 <!-- Use [create a property room](#create-a-property-room) or [create an item in a property room](#create-an-item-in-a-property-room) insted. -->
 
