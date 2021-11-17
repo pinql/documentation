@@ -56,6 +56,35 @@ Content-Type: application/json
 }
 ```
 
+## Update a user
+
+```request
+PUT /rest/user/:userId
+Content-Type: application/json
+```
+
+#### Request body
+
+```graphql
+{
+  foreignId: String
+  firstName: String
+  lastName: String
+  email: String
+  phoneNumber: String
+  birthDate: String
+  password: String
+}
+```
+
+#### Response
+
+```graphql
+{
+  ...user
+}
+```
+
 ## Get a user by id
 
 ```request
