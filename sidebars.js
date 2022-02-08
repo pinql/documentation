@@ -12,6 +12,7 @@ module.exports = {
         "rest/company",
         "rest/property",
         "rest/contract",
+        "rest/firms",
         "rest/user",
         "rest/inventory",
         "rest/relation-tuples",
