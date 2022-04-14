@@ -4,7 +4,7 @@ description: Firms endpoints.
 hide_table_of_contents: false
 ---
 
-## List contracts
+## List firms
 
 ```request
 GET /rest/firms
@@ -18,6 +18,8 @@ foreignId: String
 contractId: String
 first: Int
 skip: Int
+fromDate: Date
+toDate: Date
 ```
 
 #### Response
