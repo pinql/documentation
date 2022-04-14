@@ -29,6 +29,9 @@ toDate: Date
   "id": "string",
   "foreignId": "string",
   "createdAt": "string",
+  "contract": { "id": "string", "foreignId": "string" }, // or null
+  "edl": { "id": "string", "foreignId": "string" }, // or null
+  "end-edl": { "id": "string", "foreignId": "string" }, // or null
   "user": [
     {
       "id": "string",
