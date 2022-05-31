@@ -55,11 +55,38 @@ Content-Type: application/json
 }
 ```
 
-## Create a relation tuple
-
-> **Not supported yet**
+## Give a user access to many properties
 
 ```request
-GET /rest/relation-tuples
+PUT /rest/relation-tuples/user/:userId
 Content-Type: application/json
+```
+
+#### Request body
+
+```graphql
+{
+  propertiesId: [String]
+}
+```
+
+#### Response
+
+```graphql
+{
+  success: true
+}
+```
+
+## Remove user access to many properties
+
+```request
+DELETE /rest/relation-tuples/user/:userId
+Content-Type: application/json
+```
+
+#### Response
+
+```graphql
+[]
 ```
