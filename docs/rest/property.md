@@ -51,7 +51,7 @@ Content-Type: application/json
   minimumDurationMounths: Int
   guarantee: Float
   rent: Float
-  area: Int
+  area: Float
   phone: String
   typeOfProperty: String (APPARTEMENT | HOUSE | VILLA) @default(value: APPARTEMENT)
   comments: String
