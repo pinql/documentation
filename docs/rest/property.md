@@ -48,9 +48,9 @@ Content-Type: application/json
   numberOfToilets: Int
   numberOfRooms: Int
   numberOfBedrooms: Int
-  minimumDurationMounths: Int
   guarantee: Float
   rent: Float
+  overRent: Float
   area: Float
   phone: String
   typeOfProperty: String (APPARTEMENT | HOUSE | VILLA) @default(value: APPARTEMENT)
@@ -59,16 +59,12 @@ Content-Type: application/json
   city: String
   country: String
   street: String
+  streetNumber: String
   postcode: String
-  houseNumber: String
   description: String
   floor: Int
-  minDuration: Int
-  maxDuration: Int
   title: String
-  listOfAmenities: [String]
   locationType: String (FURNITURED | EMPTY) @default(value: EMPTY)
-  propertyStatus: String (OCCUPIED | UNOCCUPIED) @default(value: UNOCCUPIED)
   expenses: Float
   published: Boolean @default(value: true)
   periodicity: String (MOUNTH | YEAR)
