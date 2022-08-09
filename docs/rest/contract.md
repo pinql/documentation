@@ -19,6 +19,7 @@ first: Int
 skip: Int
 fromDate: Date
 toDate: Date
+getAllStatus: Boolean @default(value: false)
 ```
 
 #### Response
